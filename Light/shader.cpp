@@ -109,6 +109,11 @@ void shader::setVec3(const std::string& name, const glm::vec3& value) const
 {
 	glUniform3fv(glGetUniformLocation(ID, name.c_str()), 1, &value[0]);
 }
+void shader::setVec3(const std::string& name, const float x, const float y, const float z) const
+{
+	glm::vec3 tmp = glm::vec3(x, y, z);
+	glUniform3fv(glGetUniformLocation(ID, name.c_str()), 1, &tmp[0]);
+}
 
 /*Ê¹ÓÃÊ¾Àý
 Shader ourShader("path/to/shaders/shader.vs", "path/to/shaders/shader.fs");

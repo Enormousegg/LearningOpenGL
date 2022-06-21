@@ -39,4 +39,23 @@
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="object.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="object.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="light.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="light.vs">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="container2.png">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
